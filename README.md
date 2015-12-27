@@ -6,18 +6,22 @@ Chocolatey
 
 ## Usage
 
-* Install
+### Install
 
-```
-$ choco install .\packages.config -y
-```
+1. Install chocolatey by following https://chocolatey.org/
+2. Install packages
 
-* Upgrade
+  ```
+  $ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/takkyuuplayer/chocolatey-recipe/master/packages.config" -OutFile "packages.config"
+  $ choco install .\packages.config -y
+  ```
+
+### Upgrade packages
 
 ```
 $ choco upgrade all -y
 ```
 
-* Export
+### Export packages
 
 Use ChocolateyGUI's export feature
